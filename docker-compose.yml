@@ -8,5 +8,5 @@ services:
     ports:
       - "81:81"
     volumes:
-      - ./conf:/etc/nginx/conf.d/
-      - ./letsencrypt-site:/usr/share/nginx/html
+      - /lets-encrypt-docker-nginx/conf:/etc/nginx/conf.d/
+      - /lets-encrypt-docker-nginx/letsencrypt-site:/usr/share/nginx/html
