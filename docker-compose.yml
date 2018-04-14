@@ -6,7 +6,7 @@ services:
     container_name: 'letsencrypt-nginx-container'
     image: nginx:latest
     ports:
-      - "81:80"
+      - "81:81"
     volumes:
       - ./conf:/etc/nginx/conf.d/
       - ./letsencrypt-site:/usr/share/nginx/html
